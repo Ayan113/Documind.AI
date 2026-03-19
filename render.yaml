@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: documind-backend
+    env: docker
+    region: ohio
+    plan: free
+    branch: main
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: VECTOR_STORE_PATH
+        value: data/vectorstore
+    disk:
+      name: documind-data
+      mountPath: /app/data
+      sizeGB: 1

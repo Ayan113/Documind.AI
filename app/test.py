@@ -1,0 +1,1 @@
+print("DOCUMIND.AI is ready 🚀")
